@@ -1621,7 +1621,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     // If such overwrites are allowed, coinbases and transactions depending upon those
     // can be duplicated to remove the ability to spend the first instance -- even after
     // being sent to another address.
-    // See BIP30 and http://r6.ca/blog/20120206T005236Z.html for more information.
+    // See BIP30 and http://r6.ca/blog/100206T005236Z.html for more information.
     // This logic is not necessary for memory pool transactions, as AcceptToMemoryPool
     // already refuses previously-known transaction ids entirely.
     // This rule was originally applied all blocks whose timestamp was after March 15, 2012, 0:00 UTC.
@@ -2604,10 +2604,10 @@ bool LoadBlockIndex(bool fAllowNew)
 {
     if (fTestNet)
     {
-        pchMessageStart[0] = 0xaf;
-        pchMessageStart[1] = 0xba;
-        pchMessageStart[2] = 0x14;
-        pchMessageStart[3] = 0xe8;
+        pchMessageStart[0] = 0xa2;
+        pchMessageStart[1] = 0xb3;
+        pchMessageStart[2] = 0x16;
+        pchMessageStart[3] = 0xe3;
 
         bnProofOfStakeLimit = bnProofOfStakeLimitTestNet; // 0x00000fff PoS base target is fixed in testnet
         hashGenesisBlock = hashGenesisBlockTestNet;
@@ -2637,7 +2637,7 @@ bool LoadBlockIndex(bool fAllowNew)
 //CBlock(hash=0000068e0b99f3db472b, ver=1, hashPrevBlock=00000000000000000000,
 // hashMerkleRoot=ea6fed5e25, nTime=1368496587, nBits=1e0fffff, nNonce=578618, vtx=1, vchBlockSig=)
 //  Coinbase(hash=ea6fed5e25, nTime=1368496567, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-//    CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff001d020f2706787878787878)
+//    CTxIn(COutPoint(0000000000, 4294967295), coinbase 04ffff10020f2706787878787878)
 //    CTxOut(empty)
 //vMerkleTree: ea6fed5e2
         // Genesis block
@@ -3017,7 +3017,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xa1, 0xb3, 0xc4, 0xee };
+unsigned char pchMessageStart[4] = { 0xa3, 0xb4, 0xc2, 0xe6 };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {

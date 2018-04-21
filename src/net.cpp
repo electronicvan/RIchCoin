@@ -889,7 +889,7 @@ void ThreadSocketHandler2(void* parg)
                     }
                     else {
                         // typical socket buffer is 8K-64K
-                        char pchBuf[0x10000];
+                        char pchBuf[10000];
                         int nBytes = recv(pnode->hSocket, pchBuf, sizeof(pchBuf), MSG_DONTWAIT);
                         if (nBytes > 0)
                         {
@@ -1034,7 +1034,7 @@ void ThreadMapPort2(void* parg)
     int error = 0;
     devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, &error);
 #else
-    /* miniupnpc 1.9.20150730 */
+    /* miniupnpc 1.9.100730 */
     int error = 0;
     devlist = upnpDiscover(2000, multicastif, minissdpdpath, 0, 0, 2, &error);
 #endif
@@ -1151,7 +1151,7 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = { //TODO: change
-    {"188.226.178.216", "188.226.155.37"},
+    {NULL, NULL},
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1222,7 +1222,7 @@ void ThreadDNSAddressSeed2(void* parg)
 
 unsigned int pnSeed[] =
 {
-	0x0c0cd0c2 // Remember: network byte order
+	0x0 // Remember: network byte order
 };
 
 void DumpAddresses()
