@@ -12,19 +12,17 @@ Specifications:
 * RPC port: `7343`
 * P2P port: `2342`
 
-* Block Reward: 
-  * Block 0 to 14,000 : -to be confirmed- coins
-  * 14,000 to 28,000 : -to be confirmed- coins
-  * 28,000 to 42,000: -to be confirmed- coins
-  * 42,000 to 210,000: -to be confirmed- coins
-  * 210,000 to 378,000: -to be confirmed- coins
-  * 378,000 to 546,000: -to be confirmed- coins
-  * 546,000 to 714,000: -to be confirmed- coins
-  * 714,000 to 2,124,000: -to be confirmed- coins
-  * 2,124,000 to 4,248,000: -to be confirmed- coins
+* Block Reward & Circulating Supply(CR): 
+  * Block 0 to 44,000 : 1440 coins (CR 63,360,000)
+  * 44,000 to 132,000 : 720 coins (CR 158,400,000)
+  * 132,000 to 440,000: 360 coins (CR 253,440,000)
+  * 440,000 to 968,000: 180 coins (CR 348,480,000)
+  * 968,000 to 1,760,000: 90 coins (CR 419,760,000)
+  * 1,760,000 to 2,816,000: 45 coins (CR 467,280,000)
+  * 2,816,000 to 4,224,000: 24 coins (CR 499,664,000)
 
 Total Supply
 ------------
-By 2026, circulating supply will be -to be confirmed- XRI, before automation of the block reward begins.
+By 2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins.
 
 Visit [https://RIchCoin.github.io](https://RIchCoin.github.io) for more info
