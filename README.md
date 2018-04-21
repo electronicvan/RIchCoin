@@ -20,9 +20,10 @@ Specifications:
   * 968,000 to 1,760,000: 90 coins (CR 419,760,000 TP 22-40)
   * 1,760,000 to 2,816,000: 45 coins (CR 467,280,000 TP 40-64)
   * 2,816,000 to 4,224,000: 24 coins (CR 499,664,000 TP 64-96)
-After 8 years, Block Rewards will be dictated by network hashrates(HR) as such:
-  * HR 16x: Block Reward 0.6x (CR 500,000,000+ TP 96-	\infty)
-  * HR 32/: Block Reward 1.4x (CR 500,000,000+ TP 96-	\infty)
+  
+* After 8 years, Block Rewards will be dictated by network hashrates(HR) as such:
+  * HR 16x: Block Reward 0.6x (CR 500,000,000+ TP 96 -)
+  * HR 32/: Block Reward 1.4x (CR 500,000,000+ TP 96 -)
   
 Total Supply
 ------------
