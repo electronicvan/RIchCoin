@@ -8,7 +8,7 @@ Specifications:
 * Symbol: `XRI`
 * PoW (proof of work)
 * Algorithms: scrypt, x17, Lyra2rev2, myr-groestl, & blake2s
-* Blocktime: <to be confirmed> seconds
+* Blocktime: 60 seconds
 * RPC port: `7343`
 * P2P port: `2342`
 
@@ -23,6 +23,6 @@ Specifications:
 
 Total Supply
 ------------
-By 2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins.
+By mid-2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins.
 
 Visit [https://RIchCoin.github.io](https://RIchCoin.github.io) for more info
