@@ -27,6 +27,16 @@ Specifications:
   
 Total Supply
 ------------
-After 8 years, by mid-2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins.
+After 8 years, by mid-2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins. Current maximum set is 1 billion, but this can be changed anytime.
 
-Visit [https://RIchCoin.github.io](https://RIchCoin.github.io) for more info
+Development and Testing on Linux/Ubuntu
+----------------------------------------
+To develop and test RIchCoin, download the following dependencies:
+
+`sudo apt-get update`
+
+```
+sudo apt-get install libdb-dev libdb++-dev build-essential libtool autotools-dev automake pkg-config libssl1.0-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
+```
+
+Note: If you are on debian, you will also need to `apt-get install libcanberra-gtk-module`.
