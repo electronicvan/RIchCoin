@@ -261,4 +261,7 @@ Linux Wallet Video Tutorial
 -------
 https://www.youtube.com/watch?v=WYe75b6RWes
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440

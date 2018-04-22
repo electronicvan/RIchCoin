@@ -207,7 +207,11 @@ cd ~
 
 mkdir ~/.RIchCoin
 cp ~/.RIchCoin/RIchCoin.conf ~/.RIchCoin/RIchCoin.bak
+<<<<<<< HEAD
 echo "rpcuser="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcpassword="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcport=7343" '\n'"port=2342" '\n'"daemon=1" '\n'"listen=1" '\n'"server=1" '\n'"addnode=103.18.40.125:2342" '\n'"addnode=104.131.144.82:2342" '\n'"addnode=138.197.68.130:2342" '\n'"addnode=144.76.167.66:2342" '\n'"addnode=152.186.36.86:2342" '\n'"addnode=159.203.121.202:2342" '\n'"addnode=172.104.157.38:2342" '\n'"addnode=192.99.7.127:2342" '\n'"addnode=219.89.84.46:2342" '\n'"addnode=45.32.129.168:2342" '\n'"addnode=45.55.59.206:2342" '\n'"addnode=46.4.64.68:2342" '\n'"addnode=51.15.46.1:2342" '\n'"addnode=52.9.109.214:2342" '\n'"addnode=66.55.64.183:2342" '\n'"addnode=67.167.207.164:2342" '\n'"addnode=78.46.190.152:2342"> ~/.RIchCoin/RIchCoin.conf
+=======
+echo "rpcuser="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcpassword="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcport=20103" '\n'"port=21103" '\n'"daemon=1" '\n'"listen=1" '\n'"server=1" '\n'"addnode=103.18.40.125:21103" '\n'"addnode=104.131.144.82:21103" '\n'"addnode=138.197.68.130:21103" '\n'"addnode=144.76.167.66:21103" '\n'"addnode=152.186.36.86:21103" '\n'"addnode=159.203.121.202:21103" '\n'"addnode=172.104.157.38:21103" '\n'"addnode=192.99.7.127:21103" '\n'"addnode=219.89.84.46:21103" '\n'"addnode=45.32.129.168:21103" '\n'"addnode=45.55.59.206:21103" '\n'"addnode=46.4.64.68:21103" '\n'"addnode=51.15.46.1:21103" '\n'"addnode=52.9.109.214:21103" '\n'"addnode=66.55.64.183:21103" '\n'"addnode=67.167.207.164:21103" '\n'"addnode=78.46.190.152:21103"> ~/.RIchCoin/RIchCoin.conf
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
 
 #// Extract http link, download blockchain and install it.
 

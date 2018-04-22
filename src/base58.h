@@ -276,9 +276,15 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
+<<<<<<< HEAD
         PUBKEY_ADDRESS = 60,  // RIchCoin: address begin with 'R'
         SCRIPT_ADDRESS = 33, 
         PUBKEY_ADDRESS_TEST = 122,
+=======
+        PUBKEY_ADDRESS = 63,  // RIchCoin: address begin with 'S'
+        SCRIPT_ADDRESS = 33, 
+        PUBKEY_ADDRESS_TEST = 115,
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
         SCRIPT_ADDRESS_TEST = 198,
     };
 

@@ -2914,10 +2914,17 @@ bool LoadBlockIndex(bool fAllowNew)
 {
     if (fTestNet)
     {
+<<<<<<< HEAD
         pchMessageStart[0] = 0xa8;
         pchMessageStart[1] = 0xb2;
         pchMessageStart[2] = 0x17;
         pchMessageStart[3] = 0xe3;
+=======
+        pchMessageStart[0] = 0xaf;
+        pchMessageStart[1] = 0xba;
+        pchMessageStart[2] = 0x14;
+        pchMessageStart[3] = 0xe8;
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
 
         bnProofOfStakeLimit = bnProofOfStakeLimitTestNet; // 0x00000fff PoS base target is fixed in testnet
         hashGenesisBlock = hashGenesisBlockTestNet;
@@ -3325,7 +3332,11 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
+<<<<<<< HEAD
 unsigned char pchMessageStart[4] = { 0xa6, 0xb7, 0xc7, 0xe2 };
+=======
+unsigned char pchMessageStart[4] = { 0xa1, 0xb3, 0xc4, 0xee };
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {

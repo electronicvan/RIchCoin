@@ -989,7 +989,22 @@ void MapPort()
 // Much thanks To:
 // Nillecram (pool.bilbotel.fr)
 static const char *strDNSSeed[][2] = { //TODO: change
+<<<<<<< HEAD
     {NULL, NULL}
+=======
+    {"001.nodex.sh", "002.nodex.sh"},
+    {"003.nodex.sh", "004.nodex.sh"},
+    {"005.nodex.sh", "006.nodex.sh"},
+    {"007.nodex.sh", "008.nodex.sh"},
+    {"009.nodex.sh", "010.nodex.sh"},
+    {"011.nodex.sh", "012.nodex.sh"},
+    {"013.nodex.sh", "014.nodex.sh"},
+    {"2sniqueaf5nldci2.onion", "3qlbuysfxxrnnwkc.onion"},
+    {"nvucn7avf4sufe7y.onion", "lp4ob2zhr35hv4lb.onion"},
+    {"466ll6hop2ihx43f.onion", "m5wkhjmsu6tno7vg.onion"},
+    {"u3thogxooisifnjg.onion", "avxjazbutru5mufe.onion"},
+    {"tqbrn4rnwsjol6xw.onion", "6vg6bcexl5tynjqp.onion"}
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1060,7 +1075,11 @@ void ThreadDNSAddressSeed2(void* parg)
 
 unsigned int pnSeed[] =
 {
+<<<<<<< HEAD
 	0x0 // Remember: network byte order
+=======
+	0x0c0cd0c2 // Remember: network byte order
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
 };
 
 void DumpAddresses()

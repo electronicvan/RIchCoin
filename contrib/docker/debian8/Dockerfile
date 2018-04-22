@@ -59,4 +59,8 @@ ENV HOME /coin/home
 CMD ["/coin/RIchCoind"]
 
 # P2P, RPC
+<<<<<<< HEAD
 EXPOSE 2342 7343
+=======
+EXPOSE 21103 20103
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440

@@ -45,7 +45,11 @@ fi
 sudo pacman -Sy openssl-1.0 base-devel boost boost-libs db4.8 base-devel qrencode qt5 automoc4 protobuf
 
 mkdir ~/.RIchCoin
+<<<<<<< HEAD
 echo "rpcuser="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcpassword="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcport=7343" '\n'"port=2342" '\n'"daemon=1" '\n'"listen=1" > ~/.RIchCoin/RIchCoin.conf
+=======
+echo "rpcuser="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcpassword="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcport=20103" '\n'"port=21103" '\n'"daemon=1" '\n'"listen=1" > ~/.RIchCoin/RIchCoin.conf
+>>>>>>> 9e838dcb5d959712eba2265497e273c660893440
 
 cd ~/
 git clone https://github.com/RichcoinCoin/RichcoinCoin
