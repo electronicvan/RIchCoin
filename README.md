@@ -1,5 +1,41 @@
 RIchCoin [XRI] Source Code
 ================================
+
+```
+ |_   _| |__   ___   / ___|___ (_)_ __     ___  / _|   __ _  | __ )  ___| |_| |_ ___ _ __     / \   __ _  ___ 
+   | | | '_ \ / _ \ | |   / _ \| | '_ \   / _ \| |_   / _` | |  _ \ / _ \ __| __/ _ \ '__|   / _ \ / _` |/ _ \
+   | | | | | |  __/ | |__| (_) | | | | | | (_) |  _| | (_| | | |_) |  __/ |_| ||  __/ |     / ___ \ (_| |  __/
+   |_| |_| |_|\___|  \____\___/|_|_| |_|  \___/|_|    \__,_| |____/ \___|\__|\__\___|_|    /_/   \_\__, |\___|
+                                                                                                   |___/      
+```
+
+Specifications:
+--------------
+
+* Symbol: `XRI`
+* PoW (proof of work)
+* Algorithms: scrypt, x17, Lyra2rev2, myr-groestl, & blake2s
+* Blocktime: 60 seconds
+* RPC port: `7343`
+* P2P port: `2342`
+
+* Block Reward & Circulating Supply(CR) and Time Period (TP) in months after release: 
+  * Block 0 to 44,000 : 1440 coins (CR 63,360,000 TP 0-1)
+  * 44,000 to 132,000 : 720 coins (CR 158,400,000 TP 1-4)
+  * 132,000 to 440,000: 360 coins (CR 253,440,000 TP 4-10)
+  * 440,000 to 968,000: 180 coins (CR 348,480,000 TP 10-22)
+  * 968,000 to 1,760,000: 90 coins (CR 419,760,000 TP 22-40)
+  * 1,760,000 to 2,816,000: 45 coins (CR 467,280,000 TP 40-64)
+  * 2,816,000 to 4,224,000: 24 coins (CR 499,664,000 TP 64-96)
+  
+* After 8 years, Block Rewards will be dictated by network hashrates(HR) as such:
+  * HR 16x: Block Reward 0.6x (CR 500,000,000+ TP 96 -)
+  * HR 32/: Block Reward 1.4x (CR 500,000,000+ TP 96 -)
+  
+Total Supply
+------------
+After 8 years, by mid-2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins. Current maximum set is 1 billion, but this can be changed anytime.
+=======
 ```
  |_   _| |__   ___   / ___|___ (_)_ __     ___  / _|   __ _  | __ )  ___| |_| |_ ___ _ __     / \   __ _  ___ 
    | | | '_ \ / _ \ | |   / _ \| | '_ \   / _ \| |_   / _` | |  _ \ / _ \ __| __/ _ \ '__|   / _ \ / _` |/ _ \
@@ -29,6 +65,7 @@ Specifications:
   * 2,124,000 to 4,248,000: 32 coins
 
 Binary (pre-compiled) wallets are available on all platforms at [https://RichcoinCoin.github.io](https://www.richcoincurrency.com/#wallets)
+>>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
 
 Compiling Linux Wallet on Ubuntu/Debian (faster) 
 ----------------------
@@ -89,7 +126,11 @@ Paste the output from the `RIchCoind` command into the Richcoin.conf like this: 
     rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
     
     
+<<<<<<< HEAD
+**Optional**: Add `rpcport=7343`, `port=2342`, or `algo=groestl` to the configuration file.
+=======
 **Optional**: Add `rpcport=20103`, `port=21103`, or `algo=groestl` to the configuration file.
+>>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
 
 Add `daemon=1`. 
 
@@ -97,8 +138,13 @@ Your config may look something like this:
 
     rpcuser=Richcoinrpcusername
     rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
+<<<<<<< HEAD
+    rpcport=7343
+    port=2342
+=======
     rpcport=20103
     port=21103
+>>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
     daemon=1
     algo=groestl
 
@@ -214,5 +260,4 @@ Special Thanks to:
 Linux Wallet Video Tutorial
 -------
 https://www.youtube.com/watch?v=WYe75b6RWes
-
 
