@@ -33,10 +33,20 @@ Development and Testing on Linux/Ubuntu
 ----------------------------------------
 To develop and test RIchCoin, download the following dependencies:
 
-`sudo apt-get update`
+```sudo apt-get update```
 
-```
-sudo apt-get install libdb-dev libdb++-dev build-essential libtool autotools-dev automake pkg-config libssl1.0-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
-```
+```sudo apt-get install libdb-dev libdb++-dev build-essential libtool autotools-dev automake pkg-config libssl1.0-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev```
 
-Note: If you are on debian, you will also need to `apt-get install libcanberra-gtk-module`.
+**Note**: If you are on debian, you will also need to `apt-get install libcanberra-gtk-module`.
+
+Then, clone the git repository and compile the daemon and gui wallet:
+
+```git clone https://github.com/ShieldCoin/Shield && cd ShieldCoin && ./autogen.sh && ./configure --with-incompatible-bdb && make```
+
+if you are using source-build libdb4.8(++)-dev you may need to use
+
+```./configure  CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib"```
+
+**Note**: If you get a "memory exhausted" error, make a swap file on your drive.
+
+Unit tests can be run with `make check` to test your changes.
