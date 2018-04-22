@@ -2,11 +2,11 @@ RIchCoin [XRI] Source Code
 ================================
 
 ```
-|_   _| |__   ___   / ___|___ (_)_ __     ___  / _|   __ _  | __ )  ___| |_| |_ ___ _ __     / \   __ _  ___    
-  | | | '_ \ / _ \ | |   / _ \| | '_ \   / _ \| |_   / _` | |  _ \ / _ \ __| __/ _ \ '__|   / _ \ / _` |/ _ \   
-  | | | | | |  __/ | |__| (_) | | | | | | (_) |  _| | (_| | | |_) |  __/ |_| ||  __/ |     / ___ \ (_| |  __/    
-  |_| |_| |_|\___|  \____\___/|_|_| |_|  \___/|_|    \__,_| |____/ \___|\__|\__\___|_|    /_/   \_\__, |\___|   
-                                                                                                  |___/        
+ |_   _| |__   ___   / ___|___ (_)_ __     ___  / _|   __ _  | __ )  ___| |_| |_ ___ _ __     / \   __ _  ___ 
+   | | | '_ \ / _ \ | |   / _ \| | '_ \   / _ \| |_   / _` | |  _ \ / _ \ __| __/ _ \ '__|   / _ \ / _` |/ _ \
+   | | | | | |  __/ | |__| (_) | | | | | | (_) |  _| | (_| | | |_) |  __/ |_| ||  __/ |     / ___ \ (_| |  __/
+   |_| |_| |_|\___|  \____\___/|_|_| |_|  \___/|_|    \__,_| |____/ \___|\__|\__\___|_|    /_/   \_\__, |\___|
+                                                                                                   |___/      
 ```
 
 Specifications:
@@ -35,6 +35,37 @@ Specifications:
 Total Supply
 ------------
 After 8 years, by mid-2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins. Current maximum set is 1 billion, but this can be changed anytime.
+=======
+```
+ |_   _| |__   ___   / ___|___ (_)_ __     ___  / _|   __ _  | __ )  ___| |_| |_ ___ _ __     / \   __ _  ___ 
+   | | | '_ \ / _ \ | |   / _ \| | '_ \   / _ \| |_   / _` | |  _ \ / _ \ __| __/ _ \ '__|   / _ \ / _` |/ _ \
+   | | | | | |  __/ | |__| (_) | | | | | | (_) |  _| | (_| | | |_) |  __/ |_| ||  __/ |     / ___ \ (_| |  __/
+   |_| |_| |_|\___|  \____\___/|_|_| |_|  \___/|_|    \__,_| |____/ \___|\__|\__\___|_|    /_/   \_\__, |\___|
+                                                                                                   |___/      
+```
+Specifications:
+--------------
+
+* Symbol: XRI
+* PoW (proof of work)
+* Algorithms: scrypt, x17, Lyra2rev2, myr-groestl, & blake2s
+* Blocktime: 45 seconds 
+* RPC port: 20103 
+* P2P port: 21103 
+* total reward cap: ~660 Million
+* Blockreward: 
+  * Block 0 to 14,000 : 8,000 coins
+  * 14,000 to 28,000 : 4,000 coins
+  * 28,000 to 42,000: 2,000 coins
+  * 42,000 to 210,000: 1,000 coins
+  * 210,000 to 378,000: 500 coins
+  * 378,000 to 546,000: 250 coins
+  * 546,000 to 714,000: 125 coins
+  * 714,000 to 2,124,000: 62 coins
+  * 2,124,000 to 4,248,000: 32 coins
+
+Binary (pre-compiled) wallets are available on all platforms at [https://RichcoinCoin.github.io](https://www.richcoincurrency.com/#wallets)
+>>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
 
 Compiling Linux Wallet on Ubuntu/Debian (faster) 
 ----------------------
@@ -94,7 +125,12 @@ Paste the output from the `RIchCoind` command into the Richcoin.conf like this: 
     rpcuser=Richcoinrpcusername
     rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
     
+    
+<<<<<<< HEAD
 **Optional**: Add `rpcport=7343`, `port=2342`, or `algo=groestl` to the configuration file.
+=======
+**Optional**: Add `rpcport=20103`, `port=21103`, or `algo=groestl` to the configuration file.
+>>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
 
 Add `daemon=1`. 
 
@@ -102,8 +138,13 @@ Your config may look something like this:
 
     rpcuser=Richcoinrpcusername
     rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
+<<<<<<< HEAD
     rpcport=7343
     port=2342
+=======
+    rpcport=20103
+    port=21103
+>>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
     daemon=1
     algo=groestl
 

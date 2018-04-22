@@ -22,7 +22,7 @@ if [ $# -lt 2 ]; then
   exit 1
 fi
 
-DISTDIR=RIchCoin-2.3.4
+DISTDIR=RIchCoin-1.0.0
 
 # Cross-compile for windows first (breaking the mingw/windows build is most common)
 cd /home/randummy/RIchCoin

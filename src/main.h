@@ -36,7 +36,7 @@ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 50000;
 static const int64 MIN_TX_FEE = 5 * CENT;
 static const int64 MIN_RELAY_TX_FEE = 5 * CENT;
-static const int64 MAX_MONEY = 662200000 * COIN; //
+static const int64 MAX_MONEY = 2000000000 * COIN; //2 billion as a technical limit, but can be changed anytime
 static const int DISABLE_POS_BLOCK = 1;
 /** Dust Soft Limit, allowed with additional fee per output */
 static const int64 DUST_SOFT_LIMIT = 100000; // 0.001 B
@@ -167,14 +167,14 @@ inline int64 GetMaxClockDrift(int Height=nBestHeight){
 inline int GetTargetSpacing(int Height=nBestHeight, bool fProofOfStake=false)
 {
     if(fProofOfStake){
-        return 45;
+        return 60;
     }
     else
     {
         if (Height < 370000){
-            return 15;//15/5 = 3sec
+            return 25;//25/5 = 5sec
         }else{
-            return 225;//225/5 = 45sec
+            return 300;//300/5 = 60sec
         }
     }
 }

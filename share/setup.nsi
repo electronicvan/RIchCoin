@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 2.3.4
+!define VERSION 1.0.0
 !define COMPANY "The RIchCoin Core project"
 !define URL http://www.RichcoinCoin.github.io/
 

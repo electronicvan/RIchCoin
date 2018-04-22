@@ -17,13 +17,13 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>2.3.4, Copyright © 2014-2018 The RIchCoin Core developers</string>
+  <string>1.0.0, Copyright © 2014-2018 The RIchCoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
-  <string>2.3.4</string>
+  <string>1.0.0</string>
 
   <key>CFBundleVersion</key>
-  <string>2.3.4</string>
+  <string>1.0.0</string>
 
   <key>CFBundleSignature</key>
   <string>????</string>
