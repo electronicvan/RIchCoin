@@ -102,13 +102,8 @@ Your config may look something like this:
 
     rpcuser=Richcoinrpcusername
     rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
-<<<<<<< HEAD
     rpcport=7343
     port=2342
-=======
-    rpcport=20103
-    port=21103
->>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
     daemon=1
     algo=groestl
 
