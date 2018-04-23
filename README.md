@@ -94,12 +94,7 @@ Paste the output from the `RIchCoind` command into the Richcoin.conf like this: 
     rpcuser=Richcoinrpcusername
     rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
     
-    
-<<<<<<< HEAD
 **Optional**: Add `rpcport=7343`, `port=2342`, or `algo=groestl` to the configuration file.
-=======
-**Optional**: Add `rpcport=20103`, `port=21103`, or `algo=groestl` to the configuration file.
->>>>>>> 1ddb431f15c18290a18dfc165b67d8e0d7a288e6
 
 Add `daemon=1`. 
 
