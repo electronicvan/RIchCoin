@@ -8,6 +8,8 @@ RIchCoin [XRI] Source Code
    |_| |_| |_|\___|  \____\___/|_|_| |_|  \___/|_|    \__,_| |____/ \___|\__|\__\___|_|    /_/   \_\__, |\___|
                                                                                                    |___/      
 ```
+# Auspicium Melioris Aevi
+# A Cryptocurrency brought to you by HTY2003, ngmhprogramming, some guy, some guy, and Binner.
 
 Specifications:
 --------------
