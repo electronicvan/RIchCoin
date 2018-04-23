@@ -41,7 +41,7 @@ Compiling Linux Wallet on Ubuntu/Debian (faster)
 
 sudo rm -Rf ~/RIchCoin  #(if you already have it) 
 
-sudo apt-get -y install git && cd ~ && git clone https://github.com/RichcoinCoin/RIchCoin && cd RIchCoin && sh go.sh
+sudo apt-get -y install git && cd ~ && git clone https://github.com/HTY2003/RIchCoin && cd RIchCoin && sh go.sh
 
 
 Compiling Linux Wallet on Ubuntu/Debian
@@ -57,7 +57,7 @@ Step 1. Install the dependencies.
 
 Step 2. Clone the git repository and compile the daemon and gui wallet:
 
-```git clone https://github.com/RichcoinCoin/RIchCoin && cd RIchCoin && ./autogen.sh && ./configure --with-incompatible-bdb && make```
+```git clone https://github.com/HTY2003/RIchCoin && cd RIchCoin && ./autogen.sh && ./configure --with-incompatible-bdb && make```
 
 if you are using source-build libdb4.8(++)-dev you may need to use
 
@@ -199,9 +199,6 @@ Using RIchCoin on Windows
 8. Start the RIchCoin-qt program.
 9. Open up RIchCoin-qt console and run ```getinfo``` (or ```getmininginfo```) to verify settings.
 
-(Optional)<br>
-Add tor nodes using: https://github.com/RichcoinCoin/RIchCoin/wiki/Using-Tor-qt-nodes
-
 **Note:** You must re-start the wallet after making changes to RichcoinCoin.conf.
 [How To build on Windows](https://bitcointalk.org/index.php?topic=149479.0)
 
@@ -209,6 +206,7 @@ Add tor nodes using: https://github.com/RichcoinCoin/RIchCoin/wiki/Using-Tor-qt-
 Thanks
 ----
 Special Thanks to: 
+* SHIELD Devs
 * VERGE Devs
 * Tor Devs
 * i2p Devs
