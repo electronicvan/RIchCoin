@@ -30,35 +30,14 @@ Specifications:
   * 2,816,000 to 4,224,000: 24 coins (CR 499,664,000 TP 64-96)
 
 * After 8 years, Block Rewards will be dictated by network hashrates(HR) as such:
-  * HR 16x: Block Reward 0.6x (CR 500,000,000+ TP 96 -)
-  * HR 32/: Block Reward 1.4x (CR 500,000,000+ TP 96 -)
+  * HR 16x: Block Reward 0.6x (CR 500,000,000+ TP 96-)
+  * HR 32/: Block Reward 1.4x (CR 500,000,000+ TP 96-)
 
 Total Supply
 ------------
-After 8 years, by mid-2026, circulating supply will be 499664000 coins, approx. 500 million XRI, before automation of the block reward begins. Current maximum set is 1 billion, but this can be changed anytime.
+After 8 years, by mid-2026, circulating supply will be 499,664,000 coins (approx. 500 million XRI), before automation of the block reward begins. Current maximum set is 2 billion, but this can be changed anytime.
 
-Compiling Linux Wallet on Ubuntu/Debian
-----------------------
-
-Step 1. Install the dependencies.
-
-```sudo apt-get update```
-
-```sudo apt-get install libdb-dev libdb++-dev build-essential libtool autotools-dev automake pkg-config libssl1.0-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev```
-
-**Note**: If you are on debian, you will also need to `apt-get install libcanberra-gtk-module`.
-
-Step 2. Clone the git repository and compile the daemon and gui wallet:
-
-```git clone https://github.com/HTY2003/RIchCoin && cd RIchCoin && ./autogen.sh && ./configure --with-incompatible-bdb && make```
-
-if you are using source-build libdb4.8(++)-dev you may need to use
-
-```./configure  CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib"```
-
-**Note**: If you get a "memory exhausted" error, make a swap space on your OS.
- 
-Using RIchCoin on Windows
+Using RIchCoin on Windows (To be tested & added)
 -------------
 1. Download the pre-compiled software. (only from official RIchCoin site)
 [to be added]()
@@ -67,15 +46,34 @@ Using RIchCoin on Windows
 4. Right click and create a new file RIchCoin.txt
 5. Edit the file to have contents above (see instructions above for options)
 6. Save and close the file
-7. Reame the file to RIchCoin.conf
+7. Reame the file to RIchCoin.conf.
 8. Start the RIchCoin-qt program.
 9. Open up RIchCoin-qt console and run ```getinfo``` (or ```getmininginfo```) to verify settings.
+10. Proceed below to make changes to your RIchCoin.conf file.
+**Note:** You must re-start the wallet after making changes to RIchCoin.conf.
 
-**Note:** You must re-start the wallet after making changes to RichcoinCoin.conf.
-[How To build on Windows](https://bitcointalk.org/index.php?topic=149479.0)
+Compiling Linux Wallet on Ubuntu/Debian
+----------------------
 
+1. Install the dependencies.
 
-To compile on Mac (OSX El Capitan, but test compiled on Mountain Lion v10.8):
+```sudo apt-get update```
+
+```sudo apt-get install libdb-dev libdb++-dev build-essential libtool autotools-dev automake pkg-config libssl1.0-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev```
+
+**Note**: If you are on debian, you will also need to `apt-get install libcanberra-gtk-module`.
+
+2. Clone the git repository and compile the daemon and gui wallet:
+
+```git clone https://github.com/HTY2003/RIchCoin && cd RIchCoin && ./autogen.sh && ./configure --with-incompatible-bdb && make```
+
+if you are using source-build libdb4.8(++)-dev you may need to use
+
+```./configure  CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib"```
+
+**Note**: If you get a "memory exhausted" error, make a swap space on your boot drive.
+
+Compiling Mac Wallet on MacOS (To be tested):
 ------------
 1. Ensure you do not have qt5 nor qt installed.
 
@@ -122,9 +120,9 @@ Trying to build .dmg on 10.8? You will need to run this:
 
     sudo -E easy_install appscript
     
-Using the wallet:
+Accessing the wallet (Linux & Mac):
 ----
-The gui wallet is in ./RIchCoin/src/qt and the daemon in ./RIchCoin/src directories.
+The gui wallet is in ./RIchCoin/src/qt and the daemon(background) wallet in ./RIchCoin/src directories.
 
 **Note**: If you see something like 'Killed (program cc1plus)' run ```dmesg``` to see the error(s)/problems(s). This is most likely caused by running out of resources. You may need to add some RAM or add some swap space.
 
@@ -135,25 +133,34 @@ If you want to copy the binaries for use by all users, run the following command
 
 ```sudo cp src/qt/RIchCoin-qt /usr/bin/```
 
-Step 3. Creating a configuration file. Type ```cd ~``` to get back to the home folder and type:
+Creating a Configuration File
+------------------------------
 
-```RIchCoind.exe```  (or ```./RIchCoind``` if on mac or linux)
+Type ```cd ~``` to get back to the home folder and type:
 
-the output from this command will tell you that you need to make a Richcoin.conf and will suggest some good starting values.
+```RIchCoind.exe``` (for Windows users)
+```./RIchCoind``` (for Mac and Linux users)
+
+The output from this command will tell you that you need to make a Richcoin.conf and will suggest some good starting values.
+
+For Windows users, access the RIchCoin.conf file in ```c:\Users\XXX\AppData\Roaming\RIchCoin``` you created earlier.
 
 For Linux users, type:
 
 ```nano ~/.RIchCoin/RIchCoin.conf```
-(For Windows users, see below. For mac users, the command is ```nano ~/Library/Application\ Support\RIchCoin\RIchCoin.conf```)
+
+For Mac users, type:
+
+```nano ~/Library/Application\ Support\RIchCoin\RIchCoin.conf```
 
 Paste the output from the `RIchCoind` command into the Richcoin.conf like this: (It is recommended to change the password to something unique.)
 
-    rpcuser=Richcoinrpcusername
-    rpcpassword=85CpSuCNvDcYsdQU8w621mkQqJAimSQwCSJL5dPT9wQX
-
-**Optional**: Add `rpcport=7343`, `port=2342`, or `algo=groestl` to the configuration file.
+    rpcuser=RIchcoinRPCusername
+    rpcpassword=RIchCoinDevPassword
 
 Add `daemon=1`.
+
+**Optional**: Add `rpcport=7343`, `port=2342`, or `algo=groestl` to the configuration file.
 
 Your config may look something like this:
 
@@ -164,18 +171,24 @@ Your config may look something like this:
     daemon=1
     algo=groestl
 
-Exit the Richcoin.conf by pressing `ctrl + x` on your keyboard then pressing `y` and hitting enter. This should have created a Richcoin.conf file with what you just added.
+Mac and Linux: Exit the Richcoin.conf by pressing `ctrl + x` on your keyboard then pressing `y` and hitting enter. This should have created a Richcoin.conf file with what you just added.
 
-Type ```RIchCoind.exe``` (or ```./RIchCoind``` if on mac or linux) and your Richcoin daemon should start.
+Type: 
+```RIchCoind.exe``` (for Windows users)
+```./RIchCoind``` (for Mac and Linux users)
+and your RIchCoin daemon should start! Huzzah!
 
-To check the status of how much of the blockchain has been downloaded (aka synced) type `RIchCoind.exe getinfo` (or `./RIchCoind getinfo` if on mac or linux).
 
-Want to 'solo-mine' from the wallet?
+To check the status of how much of the blockchain has been downloaded (aka synced) type:
+`RIchCoind.exe getinfo` (for Windows users)
+`./RIchCoind getinfo` (for Mac and Linux users)
+
+"Solo-mining" from your wallet?
 ----------
-The wallet has a built-in CPU miner. You need to specify the algorithm (see below) and set the "gen" flag. For instance, in the configuration specify ```gen=1```.
+The wallet has a built-in CPU miner. You need to specify the algorithm in your .conf file and set the "gen" flag. For instance, in the configuration specify ```gen=1```.
 
 
-Using different algorithms (for mining)
+Using different mining algorithms
 ----------
 To use a specific mining algorithm use the `algo` switch in your configuration file (.conf file) or from the command line (like this `--algo=x17`) Here are the possible values:
 
